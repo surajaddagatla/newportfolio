@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">  
+        <div class="logo">PORTFOLIO</div>
+        <div class="head">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            PORTFOLIO
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="mypic" src="./collection/mypicture1.jpg" alt="Suraj">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">
+                Hello, I'm 
+            </p>
+            <h1 class="title">SURAJ ADDAGATLA</h1>
+            <p class="section__text__p2">Student at VNR VJIET</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./collection/cv.pdf')">My Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info   </button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="about-head">Want to know More</h1>
+        <div class="about-sec">
+            <img class="about-pic" src="./collection/mypicture2.jpg" alt="about picture">
+            <div class="about-para">
+                <p class="about-para-1">As an ECE student, I have a diverse skill set encompassing programming languages like Python, C++, and web development technologies like HTML5, CSS, and JavaScript. My projects have included the development of GSM-based fire alert systems and image compression. Notably, I gained respectable rankings in both the TS ECET (11th) and the AP ECET (14th), proving my academic ability. Furthermore, I placed third in a quiz competition at JNTUH, demonstrating my intellectual ability and versatility.
+                </p>
+                <p class="about-para-1">Known for my ability to multitask, quick learning, and deep-seated passion for innovation, I am driven to make impactful contributions to the tech industry. With a strong foundation in both academic understanding and practical application, I am keen to use my skills.</p>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <h1 class="education-head">EDUCATION</h1>
+        <div class="btech">
+            <p class="btch">B-Tech:</p>
+            <div class="vnr">
+                <img src="./collection/vnrvjiet.jpeg" alt="college logo" class="vnrlogo">
+                <div class="locate">
+                    <p>VNR VIGNANA JYOTI INSTITUTE OF ENGINEERING AND TECHNOLOGY</p>
+                    <p class="locate-size">HYDERABAD, INDIA</p>
+                </div>
+            </div>
+            <p class="btech-course">ELECTRONICS AND COMMUNICATION ENGINEERING</p>
+            <div class="academicyear">
+                <img src="./collection/academiclogo.png" alt="academic year" class="academic">
+                <p>2022-2025</p>
+            </div>
+            <div class="cgpa">
+                <img src="./collection/resultlogo.avif" alt="cgpa" class="cgpalogo">
+                <p>9.27/10</p>
+            </div>
+        </div>
+        <div class="btech">
+            <p class="btch">Diploma:</p>
+            <div class="vnr">
+                <img src="./collection/gioelogo.jpg" alt="college logo" class="vnrlogo">
+                <div class="locate">
+                    <p>GOVERNMENT INSTITUTE OF ELECTRONICS</p>
+                <p class="locate-size">SECUNDERABAD, INDIA</p>
+                </div>
+            </div>
+            <p class="btech-course">EMBEDDED SYSTEMS ENGINEERING</p>
+            <div class="academicyear">
+                <img src="./collection/academiclogo.png" alt="academic year" class="academic">
+                <p>2018-2022</p>
+            </div>
+            <div class="cgpa">
+                <img src="./collection/resultlogo.avif" alt="cgpa" class="cgpalogo">
+                <p>82.59%</p>
+            </div>
+        </div>
+        <div class="btech">
+            <p class="btch">SSC:</p>
+            <div class="vnr">
+                <img src="./collection/srichaitanyalogo.png" alt="college logo" class="vnrlogo">
+                <div class="locate">
+                    <p>SRI CHAITANYA HIGH SCHOOL</p>
+                <p class="locate-size">KORUTLA, INDIA</p>
+                </div>
+            </div>
+            <div class="academicyear">
+                <img src="./collection/academiclogo.png" alt="academic year" class="academic">
+                <p>2017-2018</p>
+            </div>
+            <div class="cgpa">
+                <img src="./collection/resultlogo.avif" alt="cgpa" class="cgpalogo">
+                <p>9.5/10</p>
+            </div>
+        </div>
+        
+    </section>
+    <section id="projects">
+        <h1 class="projects-head">PROJECTS</h1>
+        <div class="project-lists-1 ">
+            <div class="project-1">
+                <img class="projects-images" src="./collection/project1logo.jpg" alt="project 1">
+                
+                <p>FLAME ALERT: RAPID FIRE DETECTION AND RESPONSE SYSTEM</p>
+                <button class="projects-btns projects-btns-1" onclick="window.open('./project1.html')">Description</button>
+            </div>
+            <div class="project-1">
+                <img class="projects-images projects-images-2" src="./collection/project2logo.jpg" alt="project 1">
+                
+                <p>GSM BASED ACCIDENT ALERT SYSTEM</p>
+                <button class="projects-btns projects-btns-2" onclick="window.open('./project2.html')">Description</button>
+            </div>
+            <div class="project-1">
+                <img class="projects-images projects-images-3" src="./collection/project3logo.webp" alt="project 1">
+                
+                <p>LOSSLESS IMAGE SIZE COMPRESSION</p>
+                <button class="projects-btns projects-btns-3" onclick="window.open('./project3.html')">Description</button>
+            </div>
+        </div>
+        <div class="project-lists-1">
+            <div class="project-1">
+                <img class="projects-images projects-images-4" src="./collection/project4logo.jpg" alt="project 1">
+                
+                <p>TEXT EXTRACTION FROM IMAGE USING PYTHON</p>
+                <button class="projects-btns projects-btns-4" onclick="window.open('./project4.html')">Description</button>
+            </div>
+            <div class="project-1">
+                <img class="projects-images" src="./collection/project5logo.png" alt="project 1">
+                
+                <p>BATTERIES OVERCHARGING PROTECTION CIRCUIT</p>
+                <button class="projects-btns projects-btns-5" onclick="window.open('./project5.html')">Description</button>
+            </div>
+        </div>
+    </section>
+    <section id="certifications">
+        <h1 class="certifications-head">CERTIFICATIONS</h1>
+        <ul>
+            <li>
+                <div class="certificates">
+                    <p>NPTEL Certification for Introduction  to Machine learning</p>
+                    <button class="certifications-btns certifications-btns-1" onclick="window.open('./collection/nptel.pdf')">View</button>
+                </div>
+            </li>
+            <li>
+                <div class="certificates">
+                    <p class="certificates-marg">CODING NINJAS - CODEKAZE</p>
+                    <h3>Round 1</h3>
+                    <button class="certifications-btns certifications-btns-21" onclick="window.open('./collection/codekazeround1.pdf')">View</button>
+                    
+                    <h3>Round 2</h3>
+                    <button class="certifications-btns certifications-btns-22" onclick="window.open('./collection/codekazeround2.pdf')">View</button>
+                </div>
+            </li>
+            <li>
+                <div class="certificates">
+                    <p>IOT HACKATHON</p>
+                    <button class="certifications-btns certifications-btns-3" onclick="window.open('./collection/iothack.pdf')">View</button>
+                </div>
+            </li>
+            <li>
+                <div class="certificates">
+                    <p>HARDWARE HACKATHON</p>
+                    <button class="certifications-btns certifications-btns-4" onclick="window.open('./collection/hardwarehack.jpg')">View</button>
+                </div>
+            </li>
+            <li>
+                <div class="certificates">
+                    <p>PCB WORKSHOP</p>
+                    <button class="certifications-btns certifications-btns-5" onclick="window.open('./collection/droneworkshop.jpg')">View</button>
+                </div>
+            </li>
+            <li>
+                <div class="certificates">
+                    <p>UDEMY CERTIFICATE FOR PYTHON</p>
+                    <button class="certifications-btns certifications-btns-6" onclick="window.open('./collection/pythonudemy.pdf')">View</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h1 class="contact-head">Contact Me at</h1>
+        <div class="contact-num">
+            <div class="mail">
+                <img class="contact-image" src="./collection/linkedinlogo.png" alt="mail">
+                <a href="www.linkedin.com/in/suraj-addagatla-469aa4263">LinkedIn</a>
+            </div>
+            <div class="mail phn-num">
+                <img class="contact-image" src="./collection/phonelogo.jpg" alt="mail">
+                <p>+91 9014881590</p>
+            </div>
+            <div class="mail">
+                <img class="contact-image" src="./collection/emaillogo.jpg" alt="mail">
+                <p>addagatlasuraj2003@gmail.com</p>
+            </div>
+        </div>
+        <div class="coding">
+            <h1>Coding Profiles:</h1>
+            <div class="hackerrank">
+                <a href="https://smartinterviews.in/profile/addagatlasuraj2"><img class="soft" src="./collection/silogo.avif" alt=""></a>
+                <a href="https://leetcode.com/surajaddagatla/"><img class="soft" src="./collection/leetcodelogo.png" alt=""></a>
+                <a href="https://www.hackerrank.com/profile/addagatlasuraj21"><img class="soft" src="./collection/hackerranklogo.png" alt=""></a>
+                <a href="https://www.codechef.com/users/surajaddagatla"><img class="soft" src="./collection/codecheflogo.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
